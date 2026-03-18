@@ -46,11 +46,11 @@ Crea un archivo `.env` en la raíz del proyecto con tus credenciales:
 
 ```bash
 # .env
-DB_HOST=localhost          # IP o hostname del servidor
-DB_PORT=5432               # Puerto por defecto de PostgreSQL
-DB_NAME=nombre_base_datos  # Nombre de la base de datos
-DB_USER=tu_usuario
-DB_PASSWORD=tu_contraseña
+DB_HOST=colmena.stguimel.com          # Base de datos abierta Colmena
+DB_PORT=5432                          # Puerto por defecto de PostgreSQL
+DB_NAME=airapp                        # Base de datos de Calidad del Aire
+DB_USER=tu_usuario                    # Proporcionado por administrador
+DB_PASSWORD=tu_contraseña             # Proporcionada por administrador
 DB_SCHEMA=public           # Esquema por defecto
 ```
 
