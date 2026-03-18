@@ -1,6 +1,5 @@
 # MM-DataIngestionService
 Mobile Monitoring Data Ingestion Service 
-# 🐘 PostgreSQL — Documentación de Integración
 
 > Guía para conectarse directamente a la base de datos PostgreSQL,
 > Explorar las tablas disponibles, ejecutar consultas y exportar resultados a CSV.
@@ -28,6 +27,7 @@ Mobile Monitoring Data Ingestion Service
 | psycopg2 | 2.9+ | `pip install psycopg2-binary` |
 | python-dotenv | 1.0+ | `pip install python-dotenv` |
 | PostgreSQL client (opcional) | 13+ | `brew install libpq` / `apt install postgresql-client` |
+
 
 ```bash
 # Instalar todo de una vez
@@ -318,8 +318,8 @@ proyecto/
 # Exportar todos los registros
 python export_csv.py
 
-# Filtrar por sesión
-python export_csv.py --session "Sesion_01"
+# Filtrar por sesión - Respetar espacios, guiones, minusculas y mayusculas Ej. "Recorrido Roma Florida"
+python export_csv.py --session "Sesion_01" 
 
 # Filtrar por rango de fechas
 python export_csv.py --start 2024-01-01 --end 2024-03-31
@@ -384,7 +384,7 @@ temperature, pm1, pm10, pm25, humidity
 
 | Versión | Fecha | Autor | Cambio |
 |---|---|---|---|
-| `1.0.0` | 2026-MM-DD | @usuario | Versión inicial: conexión PostgreSQL | Agregada tabla `mobilemonn` y ejemplos de queries | Corrección: nombres de columnas en minúsculas según esquema real | Agregado `export_csv.py` y documentación de export CSV |
+| `1.0.0` | 2026-03-18 | @davidcortesgmg | Versión inicial: conexión PostgreSQL | Agregada tabla `mobilemonn` y ejemplos de queries | Corrección: nombres de columnas en minúsculas según esquema real | Agregado `export_csv.py` y documentación de export CSV |
 
 ---
 
